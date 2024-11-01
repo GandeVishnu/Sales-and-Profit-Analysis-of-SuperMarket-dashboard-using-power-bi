@@ -14,4 +14,9 @@ Step 6: In the ScreenShot Folder you can see the
                 
 
 In brief,
-By seeing the Dashboard, We can understand that Sales and Profit by Market by year to year bases and Increasing or Decreasing the sales or profits in Category and Sub-category. And What Percent the Market has changed in both.
+By seeing the Dashboard,
+
+We can understand that Sales and Profit by Market by year to year bases.
+Increasing or Decreasing the sales or profits in Category and Sub-category. 
+What Percent the Market has changed in both.
+And By year to year we can find the Demanding Category and Sub-category Product and the percentage of it.
