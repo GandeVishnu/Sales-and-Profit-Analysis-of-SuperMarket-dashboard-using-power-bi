@@ -13,4 +13,5 @@ Step 6: In the ScreenShot Folder you can see the
                 2) Profit_analysis_Dashboard
                 
 
-By seeing the Dashboard,We can understand that Sales and Profit by Market by year to year bases and Increasing or Drecreasing the sales or profits in Category and Sub-category.
+In brief,
+By seeing the Dashboard, We can understand that Sales and Profit by Market by year to year bases and Increasing or Decreasing the sales or profits in Category and Sub-category. And What Percent the Market has changed in both.
