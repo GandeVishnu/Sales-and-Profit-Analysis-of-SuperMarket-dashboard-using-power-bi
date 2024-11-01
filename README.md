@@ -9,6 +9,7 @@ Step 4: Updated excel file:"updated_dateset-_calculated_columns.xlsx".
 Step 5: Created Power Bi Dashboard using updated_dateset-_calculated_columns.xlsx file
 
 Step 6: In the ScreenShot Folder you can see the 
+
                 1) Sales_analysis_Dashboard 
                 2) Profit_analysis_Dashboard
                 
