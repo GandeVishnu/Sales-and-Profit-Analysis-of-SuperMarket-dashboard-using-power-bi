@@ -105,6 +105,6 @@ By taking first row as an example :
     - felse_column = np.where(profit_percentage > 10, "High", "Low")
 16. Sales Priority: 
     Example criteria:
-                      Sales > $500 → "High"
-                      $200 ≤ Sales ≤ $500 → "Medium"
-                      Sales < $200 → "Low"
+                      Sales > 500 → "High"
+                      $200 ≤ Sales ≤ 500 → "Medium"
+                      Sales < 200 → "Low"
