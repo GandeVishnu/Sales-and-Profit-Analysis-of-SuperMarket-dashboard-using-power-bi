@@ -1,6 +1,7 @@
 updated_dataset-_calculated_columns.xlsx file:
 
-These are the newly created columns in "updated_dataset-_calculated_columns.xlsx"
+These are the newly created columns in "updated_dataset-_calculated_columns.xlsx":
+
    sqrt-sales, Power-Sales, round-up, length-cust, COST PRICE, Profit Percentage, 
    month of orders, days to shift, day of the week, round-down, round, AP/Item, 
    Sum-sales, av/item(1), Sales-Priority, ifelse-column               
