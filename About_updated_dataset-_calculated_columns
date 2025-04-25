@@ -51,62 +51,93 @@ By taking first row as an example :
 1. sqrt-sales: This is the square root of the Sales value (352.38).  
    - Calculation: √(352.38) =approx 18.77.
    - Formula: sqrt_sales = Sales ** 0.5.
+   Formula: =SQRT(Sales)
+   Example: =SQRT(A2) (where A2 is the Sales value)
 
 2. Power-Sales: This involves raising Sales to a high exponent. From the data, this could mean Sales raised to the power of 3 or 4, yielding a large number.
    - Calculation example (hypothetical exponent of 3): ( 352.38^3 =approx 43,755,611.10).
    - Formula: power_sales = Sales ** 3 (or adjust the exponent as needed)
+   Formula: =POWER(Sales, exponent)
+   Example: =POWER(A2, 3) (where A2 is the Sales value and 3 is the exponent)
 
 3. round-up: The square root of Sales (18.77) is rounded up to the next decimal.
    - Calculation: ceil(18.77) = 18.78.
    - Formula: round_up = math.ceil(sqrt(Sales))
+   Formula: =CEILING(SQRT(Sales), 0.01)
+   Example: =CEILING(SQRT(A2), 0.01)
 
 4. length-cust: This counts the number of characters in the Customer Name (e.g., "Chuck Sachs").
    - Calculation: 11 characters.
    - Formula: length_cust = len(Customer_Name)
+   Formula: =LEN(Customer_Name)
+   Example: =LEN(B2) (where B2 is the Customer Name)
 
 5. COST PRICE: Represents the cost calculated by subtracting Profit from Sales.
    - Calculation:  352.38 - 21.0 = 331.38.
    - Formula (based on profit): cost_price = Sales - Profit
+   Formula: =Sales - Profit
+   Example: =A2 - D2 (where A2 is Sales and D2 is Profit)
 
 6. Profit Percentage: The percentage of Sales represented by Profit.
    - Calculation: (21.0/352.38)*100 =6.34%).
    - Formula: profit_percentage = (Profit / Sales) * 100
+   Formula: =(Profit / Sales) * 100
+   Example: =(D2 / A2) * 100
 
 7. month of orders: Extracted from the Order Date, representing the month in numeric form.
    - December corresponds to 12.
    - Formula: month_of_orders = Order_Date.month
+   Formula: =MONTH(Order_Date)
+   Example: =MONTH(C2) (where C2 is the Order Date)
 
 8. days to shift: This is the number of days between `Order Date` and `Ship Date`.
    - Calculation: Ship Date - Order Date = 6 days.
    - days_to_shift = (Ship_Date - Order_Date).days
+   Formula: =Ship_Date - Order_Date
+   Example: =D2 - C2 (where D2 is the Ship Date and C2 is the Order Date)
 
 9. day of the week: Represents the day of the week for `Order Date`, where typically Monday = 0 and Sunday = 6.
    - For this example, the Order Date falls on a Thursday, which is represented by 4.
    - Formula: day_of_week = Order_Date.weekday()
+   Formula: =WEEKDAY(Order_Date, 2)
+   Example: =WEEKDAY(C2, 2) (returns 1 for Monday, 7 for Sunday)
 
 10. round-down: The square root of Sales (18.77) rounded down.
     - Calculation: floor(18.77) = 18.77.
     - Formula: round_down = math.floor(sqrt(Sales))
+   Formula: =FLOOR(SQRT(Sales), 0.01)   
+   Example: =FLOOR(SQRT(A2), 0.01)
 
 11. round: Rounds the square root of Sales (18.77) using standard rounding rules.
     - Result: 18.77 (as it is close to this value already).
     - Formula: rounded = round(sqrt(Sales), 2)
+   Formula: =ROUND(SQRT(Sales), 2)
+   Example: =ROUND(SQRT(A2), 2)
 
 12. AP/Item: Likely represents the average price per item.
     - Calculation: 352.38/7 =8.23.
     - Formula: average_price_per_item = Sales / Quantity
+   Formula: =Sales / Quantity
+   Example: =A2 / B2 (where A2 is Sales and B2 is Quantity)
 
 13. Sum-sales: Likely the total Sales across a specific group (e.g., all orders by this customer or in this segment).
     - Here, it’s a large cumulative value:12,642,501.91.
     - Formula (e.g., grouped by Customer ID): sum_sales = df.groupby("Customer ID")["Sales"].transform("sum")
+   Formula: =SUMIF(Customer_ID_Range, Customer_ID, Sales_Range)
+   
+   Example: =SUMIF(F2:F100, F2, A2:A100) (summing Sales for a specific Customer ID)
 
 14. av/item(1): Likely an average of Sales across multiple items or transactions.
     - Value: 3 (details on calculation context could vary).
     - Formula: average_item_sales = df["Sales"].mean()
+   Formula: =AVERAGE(Sales_Range)
+   Example: =AVERAGE(A2:A100) (to calculate the average Sales)
 
 15. ifelse-column: Represents a conditional categorization, likely based on Sales or Profit thresholds.
     - In this example, it’s labeled "low," possibly indicating low profit or sales based on a set condition.
-    - felse_column = np.where(profit_percentage > 10, "High", "Low")
+    - false_column = np.where(profit_percentage > 10, "High", "Low")
+   Formula: =IF(Sales > 500, "High", IF(Sales >= 200, "Medium", "Low"))
+   Example: =IF(A2 > 500, "High", IF(A2 >= 200, "Medium", "Low"))
 16. Sales Priority: 
     Example criteria:
                       Sales > 500 → "High"
