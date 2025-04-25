@@ -120,9 +120,3 @@ This project demonstrates how **Power BI** and **Excel** can drive informed busi
 - **Re-evaluating underperforming regions**
 
 ---
-## 🧠 Skills Applied
-
-- Data Cleaning & Preparation
-- KPI Card Visualizations
-- Power BI Dashboard Design
-- Business Insight Generation 
