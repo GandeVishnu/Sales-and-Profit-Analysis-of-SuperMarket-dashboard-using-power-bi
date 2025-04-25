@@ -1,22 +1,32 @@
-Step 1: See the video.
 
-Step 2: "Global-superstore.xlsx" is the actual File.
+# Power BI Dashboard: Global Superstore Analysis
 
-Step 3: Open About_updated_dateset-_calculated_columns.txt in that you can see the newly created columns name have how it was created.
+## 🔹 Step-by-Step Guide
 
-Step 4: Updated excel file:"updated_dateset-_calculated_columns.xlsx".
+**Step 1:** 📺 Watch the video walkthrough for a quick understanding of the project.
 
-Step 5: Created Power Bi Dashboard using updated_dateset-_calculated_columns.xlsx file
+**Step 2:** 📂 `Global-superstore.xlsx` — This is the original dataset.
 
-Step 6: In the ScreenShot Folder you can see the 
-                1) Sales_analysis_Dashboard 
-                2) Profit_analysis_Dashboard
-                
+**Step 3:** 📝 Open `About_updated_dataset-_calculated_columns.txt` to view the list of newly created columns and how each one was derived.
 
-In brief,
-By seeing the Dashboard,
+**Step 4:** 📊 `updated_dataset-_calculated_columns.xlsx` — This is the cleaned and enhanced dataset with all calculated columns.
 
-We can understand that Sales and Profit by Market by year to year bases.
-Increasing or Decreasing the sales or profits in Category and Sub-category. 
-What Percent the Market has changed in both.
-And By year to year we can find the Demanding Category and Sub-category Product and the percentage of it.
+**Step 5:** 🧠 The Power BI Dashboard is created using the updated Excel file (`updated_dataset-_calculated_columns.xlsx`).
+
+**Step 6:** 🖼️ Check the `Screenshot` folder for visual insights:
+- **Sales_Analysis_Dashboard**
+- **Profit_Analysis_Dashboard**
+- **Sub-category_by_Sales**
+
+---
+
+## 🔍 Project Summary
+
+By exploring the Power BI dashboards, we can:
+
+- Understand **Sales** and **Profit** trends by **Market** on a **yearly basis**.
+- Identify increasing or decreasing patterns in **Category** and **Sub-category** sales/profit.
+- Analyze **market performance** change percentages year over year.
+- Discover the **most demanded Categories and Sub-categories** and their **year-wise performance and contribution percentages**.
+
+  
