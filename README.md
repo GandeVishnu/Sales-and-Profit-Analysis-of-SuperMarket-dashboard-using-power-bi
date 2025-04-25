@@ -102,8 +102,7 @@ By exploring the dashboards, you can:
 
 ## 🧠 Skills Applied
 
-- Data Cleaning & Preparation (Power Query)
-- DAX Measures (Profit%, YTD, YoY Change)
+- Data Cleaning & Preparation
 - KPI Card Visualizations
 - Power BI Dashboard Design
 - Business Insight Generation 
