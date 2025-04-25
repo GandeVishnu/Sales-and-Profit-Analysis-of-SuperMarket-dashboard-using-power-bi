@@ -91,15 +91,35 @@ By exploring the dashboards, you can:
 
 ## 📊 Dashboard Features
 
+- 📈 **Year-wise sales & profit trend analysis (2011–2014)**
+- 🌎 **Interactive Market vs. Category filters**
 - ✅ **Category & Sub-Category Filters**
 - 📈 **Sales and Profit Trend Visuals**
-- 🌐 **Market and Region Comparisons**
-- 💡 **Top/Bottom Performer Cards**
-- 🧩 **Drill-down and slicer interactivity**
+- 🌐 **Market and Country Comparisons**
 - 📅 **Year-wise insight breakdowns**
+- 💡 **Dynamic filters for better decision-making**
+- 📌 **Category & Sub-Category contribution Donut charts**
+
 
 ---
 
+## 📌 Key Takeaways
+
+- **Technology** is the most **profitable** and **highest-selling** category.
+- **APAC** leads both in **sales** and **profits**, especially in Technology.
+- **Furniture** has the lowest **profit margin**, despite contributing heavily to overall sales.
+- **Canada** and **Africa** have minimal impact on performance and could be reconsidered for investment focus.
+
+---
+## ✅ Conclusion
+
+This project demonstrates how **Power BI** and **Excel** can drive informed business decisions through insightful dashboards. The analysis highlights areas for improvement and potential investment, supporting strategic decisions like:
+
+- **Investing more in Technology products**
+- **Strengthening market presence in APAC and EU**
+- **Re-evaluating underperforming regions**
+
+---
 ## 🧠 Skills Applied
 
 - Data Cleaning & Preparation
