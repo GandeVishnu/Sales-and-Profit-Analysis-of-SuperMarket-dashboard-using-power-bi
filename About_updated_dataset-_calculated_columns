@@ -52,37 +52,37 @@ By taking first row as an example :
    - Calculation: √(352.38) =approx 18.77.
    - Formula: sqrt_sales = Sales ** 0.5.
    Formula: =SQRT(Sales)
-   Example: =SQRT(A2) (where A2 is the Sales value)
+   Example: =SQRT(S2) (where S2 is the Sales value)
 
 2. Power-Sales: This involves raising Sales to a high exponent. From the data, this could mean Sales raised to the power of 3 or 4, yielding a large number.
    - Calculation example (hypothetical exponent of 3): ( 352.38^3 =approx 43,755,611.10).
    - Formula: power_sales = Sales ** 3 (or adjust the exponent as needed)
    Formula: =POWER(Sales, exponent)
-   Example: =POWER(A2, 3) (where A2 is the Sales value and 3 is the exponent)
+   Example: =POWER(S2, 3) (where S2 is the Sales value and 3 is the exponent)
 
 3. round-up: The square root of Sales (18.77) is rounded up to the next decimal.
    - Calculation: ceil(18.77) = 18.78.
    - Formula: round_up = math.ceil(sqrt(Sales))
    Formula: =CEILING(SQRT(Sales), 0.01)
-   Example: =CEILING(SQRT(A2), 0.01)
+   Example: =CEILING(SQRT(S2), 0.01)
 
 4. length-cust: This counts the number of characters in the Customer Name (e.g., "Chuck Sachs").
    - Calculation: 11 characters.
    - Formula: length_cust = len(Customer_Name)
    Formula: =LEN(Customer_Name)
-   Example: =LEN(B2) (where B2 is the Customer Name)
+   Example: =LEN(G2) (where G2 is the Customer Name)
 
 5. COST PRICE: Represents the cost calculated by subtracting Profit from Sales.
    - Calculation:  352.38 - 21.0 = 331.38.
    - Formula (based on profit): cost_price = Sales - Profit
    Formula: =Sales - Profit
-   Example: =A2 - D2 (where A2 is Sales and D2 is Profit)
+   Example: =S2 - V2 (where S2 is Sales and V2 is Profit)
 
 6. Profit Percentage: The percentage of Sales represented by Profit.
    - Calculation: (21.0/352.38)*100 =6.34%).
    - Formula: profit_percentage = (Profit / Sales) * 100
    Formula: =(Profit / Sales) * 100
-   Example: =(D2 / A2) * 100
+   Example: =(V2 / S2) * 100
 
 7. month of orders: Extracted from the Order Date, representing the month in numeric form.
    - December corresponds to 12.
@@ -106,38 +106,35 @@ By taking first row as an example :
     - Calculation: floor(18.77) = 18.77.
     - Formula: round_down = math.floor(sqrt(Sales))
    Formula: =FLOOR(SQRT(Sales), 0.01)   
-   Example: =FLOOR(SQRT(A2), 0.01)
+   Example: =FLOOR(SQRT(S2), 0.01)
 
 11. round: Rounds the square root of Sales (18.77) using standard rounding rules.
     - Result: 18.77 (as it is close to this value already).
     - Formula: rounded = round(sqrt(Sales), 2)
    Formula: =ROUND(SQRT(Sales), 2)
-   Example: =ROUND(SQRT(A2), 2)
+   Example: =ROUND(SQRT(S2), 2)
 
 12. AP/Item: Likely represents the average price per item.
     - Calculation: 352.38/7 =8.23.
     - Formula: average_price_per_item = Sales / Quantity
    Formula: =Sales / Quantity
-   Example: =A2 / B2 (where A2 is Sales and B2 is Quantity)
+   Example: =S2 / T2 (where S2 is Sales and T2 is Quantity)
 
 13. Sum-sales: Likely the total Sales across a specific group (e.g., all orders by this customer or in this segment).
     - Here, it’s a large cumulative value:12,642,501.91.
     - Formula (e.g., grouped by Customer ID): sum_sales = df.groupby("Customer ID")["Sales"].transform("sum")
-   Formula: =SUMIF(Customer_ID_Range, Customer_ID, Sales_Range)
-   
-   Example: =SUMIF(F2:F100, F2, A2:A100) (summing Sales for a specific Customer ID)
 
 14. av/item(1): Likely an average of Sales across multiple items or transactions.
     - Value: 3 (details on calculation context could vary).
     - Formula: average_item_sales = df["Sales"].mean()
    Formula: =AVERAGE(Sales_Range)
-   Example: =AVERAGE(A2:A100) (to calculate the average Sales)
+   Example: =AVERAGE(S2:S51291) (to calculate the average Sales)
 
 15. ifelse-column: Represents a conditional categorization, likely based on Sales or Profit thresholds.
     - In this example, it’s labeled "low," possibly indicating low profit or sales based on a set condition.
     - false_column = np.where(profit_percentage > 10, "High", "Low")
    Formula: =IF(Sales > 500, "High", IF(Sales >= 200, "Medium", "Low"))
-   Example: =IF(A2 > 500, "High", IF(A2 >= 200, "Medium", "Low"))
+   Example: =IF(S2 > 500, "High", IF(S2 >= 200, "Medium", "Low"))
 16. Sales Priority: 
     Example criteria:
                       Sales > 500 → "High"
