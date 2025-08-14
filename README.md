@@ -120,3 +120,12 @@ This project demonstrates how **Power BI** and **Excel** can drive informed busi
 - **Re-evaluating underperforming regions**
 
 ---
+
+
+## 📷 Dashboard Preview
+
+
+![Dashboard Screenshot](ScreenShots/GS_Sales_Dashboard.png)
+![Dashboard Screenshot](ScreenShots/GS_Profit_Dashboar.png)
+
+---
