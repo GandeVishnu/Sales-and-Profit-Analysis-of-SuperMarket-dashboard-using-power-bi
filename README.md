@@ -126,6 +126,6 @@ This project demonstrates how **Power BI** and **Excel** can drive informed busi
 
 
 ![Dashboard Screenshot](ScreenShots/GS_Sales_Dashboard.png)
-![Dashboard Screenshot](ScreenShots/GS_Profit_Dashboar.png)
+![Dashboard Screenshot](ScreenShots/GS_Profit_Dashboard.png)
 
 ---
